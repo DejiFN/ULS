@@ -1,0 +1,28 @@
+-- password deji (root password for the database)
+
+CREATE DATABASE log;    /* creating the schema called log */
+
+   /*  creating a table named details and the attributes for my table */
+CREATE TABLE details (                
+    FIRST_NAME varchar(255), 
+    LAST_NAME varchar(255),
+    USER_NAME varchar(255),
+    PASSWORD varchar(255),
+    CONFIRMPASSWORD varchar(255),
+    EMAIL varchar(255),
+    PHONENUMBER  varchar(255),
+      ADDRESS  varchar(255)
+);
+
+SELECT * FROM details;   -- showing all elements in my table
+
+
+insert into details values (?,?,?,?,?,?,?,?) ;      /* inserting elements into my table */
+
+select USER_NAME,  PASSWORD from details where USER_NAME = "name" and PASSWORD = "name" ;      /*  comparing the username and password */
+
+/*
+DELETE FROM details     clearing the database 
+ORDER BY EMAIL
+LIMIT 40;
+*/
